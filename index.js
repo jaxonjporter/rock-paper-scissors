@@ -6,11 +6,13 @@ var rps = ""
 var choice = ""
 var result = document.getElementById("result")
 var score = document.getElementById("score")
-
+var restart = document.getElementById("restart")
 
 var wins = 0;
 var losses = 0;
 var ties = 0;
+
+score.innerHTML = "Wins: " + wins + " Losses: " + losses + " Ties: " + ties
 
 one.addEventListener("click", function() {
   choice = "rock";
@@ -66,3 +68,11 @@ function winner(choice) {
   } else {}
   score.innerHTML = "Wins: " + wins + " Losses: " + losses + " Ties: " + ties
 }
+
+restart.addEventListener("click", function() {
+  wins = 0
+  losses = 0
+  ties = 0
+  score.innerHTML = "Wins: " + wins + " Losses: " + losses + " Ties: " + ties
+  result.innerHTML = "" 
+});
