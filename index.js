@@ -30,11 +30,13 @@ three.addEventListener("click", function() {
 });
 
 
+
 function winner(choice) {
   rps = choices[Math.floor(Math.random()*3)]
   if (choice === rps) {
     result.innerHTML = "You chose " + choice + ". The computer chose " + rps + ". You tied." 
     ties += 1 
+    
   } else if (choice !== rps) {
     switch (choice) {
       case "rock": 

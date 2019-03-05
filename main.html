@@ -4,22 +4,27 @@
   <meta charset="UTF-8">
 
   <title>RPS</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type ="text/css" href="main.css" />
   <link rel="script" href="" />
 </head>
-<body>
-  <h1>Welcome</h1>
-  <img src="rps.png" alt="Rock-Paper-Scissors" />
+<body class="container bg-dark">
+  <div class="row">
+    <div class="col-8 offset-2 text-center bg-white mt-5">
+      <h1>Welcome to Rock Paper Scissors</h1>
 
-  <button class="btn" id="one">Rock</button>
-  <button class="btn" id="two">Paper</button>
-  <button class="btn" id="three">Scissors</button>
+      <h3>Click on a picture to play</h3>
+      <div class="centered">
+        <img src="rock.png" alt="Rock-Paper-Scissors" class="inline" id="one"/><img src="paper.png" alt="paper" class="inline" id="two" /><img src="scissors.png" alt="scissors" class="inline" id="three" />
+      </div>
 
-  <p id="result"></p>
+      <p id="result"></p>
 
-  <h3 id="score"></h3>
+      <h3 id="score"></h3>
 
-  <button class="btn" id="restart">New Game</button>
+      <button class="btn btn-primary mb-2" id="restart">New Game</button>
+    </div>
+  </div>
 
 
 

@@ -5,3 +5,16 @@ button {
   margin-right: 120px;
   margin-left:  30px;
 }
+.inline{
+  display: inline;
+}
+
+.win{
+ background-color: green;
+}
+.lose{
+  background-color: red;
+}
+.tie{
+  background-color: yellow;
+}
